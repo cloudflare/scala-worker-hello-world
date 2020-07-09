@@ -9,10 +9,8 @@ object Main {
     })
   }
 
-  def handleRequest(request: Request) = {
-    new Response(
-      "Hello Worker Scala",
-      ResponseInit(
+  def handleRequest(request: Request): Response = {
+    new Response("Hello Worker Scala", ResponseInit(
         _headers = js.Dictionary("content-type" -> "text/plain")))
   }
 }
