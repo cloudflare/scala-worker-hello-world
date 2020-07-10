@@ -10,7 +10,7 @@ object Main {
   }
 
   def handleRequest(request: Request): Response = {
-    new Response("Hello Worker Scala", ResponseInit(
+    new Response("Scala Worker hello world", ResponseInit(
         _headers = js.Dictionary("content-type" -> "text/plain")))
   }
 }
