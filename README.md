@@ -2,7 +2,7 @@
 
 Your Scala code in [Main.scala](https://github.com/cloudflare/scala-worker-hello-world/blob/master/src/main/scala/Main.scala), running on Cloudflare Workers
 
-In addition to [Wrangler](https://github.com/cloudflare/wrangler) you will need to install the [Scala build tool sbt](https://www.scala-sbt.org/1.x/docs/Setup.html), including a JDK.
+In addition to [Wrangler](https://github.com/cloudflare/wrangler) you will need to install the Scala build tool [sbt](https://www.scala-sbt.org/1.x/docs/Setup.html), including a JDK.
 
 #### Wrangler
 
