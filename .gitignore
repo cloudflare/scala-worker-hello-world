@@ -7,6 +7,7 @@ wasm-pack.log
 worker/
 node_modules/
 .cargo-ok
+.bsp
 /index.js
 /index.js.map
 /target/

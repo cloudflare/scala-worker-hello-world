@@ -1,5 +1,5 @@
-import org.scalajs.dom.experimental.serviceworkers.{FetchEvent}
-import org.scalajs.dom.experimental.{Request, Response, ResponseInit}
+import org.scalajs.dom.{FetchEvent, Request, Response, ResponseInit}
+
 import scala.scalajs.js
 
 object Main {
@@ -10,7 +10,8 @@ object Main {
   }
 
   def handleRequest(request: Request): Response = {
-    new Response("Scala Worker hello world", ResponseInit(
-        _headers = js.Dictionary("content-type" -> "text/plain")))
+    new Response("Scala Worker hello world", new ResponseInit {
+      headers = js.Dictionary("content-type" -> "text/plain")
+    })
   }
 }
